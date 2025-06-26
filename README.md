@@ -30,7 +30,7 @@ Follow these steps to download and run this project locally:
 First, open a terminal and run:
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/yvs-prasanna/Online-Learning-App.git
 ```
 
 Navigate into the project
