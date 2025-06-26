@@ -228,7 +228,7 @@ File: Postman Collection.json
 - **Post a Doubt**  
   `POST /api/doubts/doubt`
 
-       #### 📝 Request Body
+  #### 📝 Request Body
 ```json
 {
     "courseId": 2,
@@ -240,7 +240,8 @@ File: Postman Collection.json
 
 - **Answer a Doubt**  
   `POST /api/doubts/doubt/:doubtId/answer`
-         #### 📝 Request Body
+  
+   #### 📝 Request Body
 ```json
 {
     "answer" : "You have read the concept first.",
