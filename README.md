@@ -1,6 +1,45 @@
 
 ---
 
+# 📚 E-Learning App
+
+An advanced Node.js-based backend API for an E-Learning platform. This app supports user registration, course enrollment, lessons, tests, live classes, doubt-solving, subscriptions, and more.
+
+---
+
+## 🚀 Features
+
+- 🔐 User Authentication (Register/Login)
+- 🎓 Course Listing, Reviews, Enrollments
+- 📘 Lessons & Progress Tracking
+- 💬 Doubt Posting & Answering
+- 🧑‍🏫 Educator Profiles & Following
+- 📺 Live Class Participation
+- 📄 Material Downloads
+- 🧪 Test Creation, Submission, Evaluation
+- 🔍 Global Search Functionality
+- 💎 Subscription Plan Handling
+
+---
+
+## ⚙️ Prerequisites & Setup
+
+### ✅ 1. Install Dependencies
+npm install
+
+### ✅ 2. **Setup Database**
+npm run setup
+
+### ✅ 3. Run the Server
+npm run dev
+
+🔗 Postman Collection
+File: Postman Collection.json
+ 1. Open Postman
+ 2. Click Import
+ 3. Upload the .json file
+ 4. Use requests organized by folders (Auth, Courses, Lessons, etc.)
+
 ## 🚀 Authentication
 
 - **Register**  
@@ -137,3 +176,4 @@
 Most endpoints require an `Authorization` header with a valid JWT:
 ```http
 Authorization: Bearer <your_token_here>
+
