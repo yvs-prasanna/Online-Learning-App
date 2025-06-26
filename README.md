@@ -21,6 +21,22 @@ An advanced Node.js-based backend API for an E-Learning platform. This app suppo
 - 💎 Subscription Plan Handling
 
 ---
+## 💻 Getting Started on Your Local Machine
+
+Follow these steps to download and run this project locally:
+
+### 🧾 1. Clone the Repository
+
+First, open a terminal and run:
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+
+Navigate into the project
+
+```bash
+cd your-repo-name
+
 
 ## ⚙️ Prerequisites & Setup
 
