@@ -43,7 +43,19 @@ File: Postman Collection.json
 ## 🚀 Authentication
 
 - **Register**  
-  `POST /api/auth/register`  
+  `POST /api/auth/register`
+
+{
+    "username": "dennis",
+    "email": "dennis@gmail.com",
+    "password": "123456",
+    "mobile" : "1234567891",
+    "targetExam": "JEE",
+    "preferredLanguage" : "English",
+    "preparationLevel" : "Great"
+}
+
+  
   Registers a new user with details like username, email, password, mobile, target exam, preferred language, and preparation level.
 
 - **Login**  
