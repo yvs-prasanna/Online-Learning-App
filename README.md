@@ -62,7 +62,20 @@ File: Postman Collection.json
   Registers a new user with details like username, email, password, mobile, target exam, preferred language, and preparation level.
 
 - **Login**  
-  `POST /api/auth/login`  
+  `POST /api/auth/login`
+  
+#### 📝 Request Body
+```json
+{
+  "username": "dennis",
+  "email": "dennis@gmail.com",
+  "password": "123456",
+  "mobile": "1234567891",
+  "targetExam": "JEE",
+  "preferredLanguage": "English",
+  "preparationLevel": "Great"
+}
+```
   Logs in an existing user and returns a JWT token.
 
 ---
@@ -76,10 +89,20 @@ File: Postman Collection.json
   `GET /api/courses/courses/:id`  
 
 - **Enroll in a Course**  
-  `POST /api/courses/courses/:id/enroll`  
+  `POST /api/courses/courses/:id/enroll`
 
 - **Post Course Review**  
-  `POST /api/courses/courses/:id/review`  
+  `POST /api/courses/courses/:id/review`
+
+  
+  #### 📝 Request Body
+```json
+{
+    "rating" : "4.5",
+    "review" : "Excellent Teaching"
+}
+```
+
   Submit rating and review.
 
 ---
@@ -90,10 +113,29 @@ File: Postman Collection.json
   `GET /api/lessons/:id`  
 
 - **Update Lesson Progress**  
-  `PUT /api/lessons/:id/progress`  
+  `PUT /api/lessons/:id/progress`
+
+  #### 📝 Request Body
+```json
+{
+    "watchedDuration": 1350,
+    "totalDuration": 2700,
+    "completed": false
+}
+```
+
+
 
 - **Save Lesson Notes**  
-  `POST /api/lessons/:id/notes`  
+  `POST /api/lessons/:id/notes`
+
+  #### 📝 Request Body
+```json
+{
+    "timestamp": 845,
+    "note": "Important formula: F = ma"
+}
+```
 
 ---
 
@@ -119,7 +161,20 @@ File: Postman Collection.json
   `POST /api/tests/tests/:id/start`  
 
 - **Submit Test Answers**  
-  `POST /api/tests/tests/:sessionId/submit`  
+  `POST /api/tests/tests/:sessionId/submit`
+
+   #### 📝 Request Body
+```json
+{
+    "answers": [
+        {
+            "questionId": 1,
+            "selectedOption": 2
+        }
+    ],
+    "timeSpent": 9500
+}
+```
 
 ---
 
@@ -152,7 +207,16 @@ File: Postman Collection.json
   `GET /api/subscriptions/plans`  
 
 - **Purchase Subscription**  
-  `POST /api/subscriptions/purchase`  
+  `POST /api/subscriptions/purchase`
+
+     #### 📝 Request Body
+```json
+{
+    "planId" : 3,
+    "paymentMethod" : "UPI",
+    "paymentId" : 1
+}
+```
 
 ---
 
@@ -162,10 +226,28 @@ File: Postman Collection.json
   `GET /api/doubts/my-doubts`  
 
 - **Post a Doubt**  
-  `POST /api/doubts/doubt`  
+  `POST /api/doubts/doubt`
+
+       #### 📝 Request Body
+```json
+{
+    "courseId": 2,
+    "lessonId": 1,
+    "question": "Why is acceleration constant in free fall?",
+    "attachments": ["image_url"]
+}
+```
 
 - **Answer a Doubt**  
-  `POST /api/doubts/doubt/:doubtId/answer`  
+  `POST /api/doubts/doubt/:doubtId/answer`
+         #### 📝 Request Body
+```json
+{
+    "answer" : "You have read the concept first.",
+    "attachments" : "www.google.com",
+    "role" : "user"
+}
+```
 
 ---
 
