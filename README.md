@@ -57,6 +57,7 @@ File: Postman Collection.json
   "preferredLanguage": "English",
   "preparationLevel": "Great"
 }
+```
   
   Registers a new user with details like username, email, password, mobile, target exam, preferred language, and preparation level.
 
