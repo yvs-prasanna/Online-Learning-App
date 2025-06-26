@@ -31,12 +31,13 @@ First, open a terminal and run:
 
 ```bash
 git clone https://github.com/your-username/your-repo-name.git
+```
 
 Navigate into the project
 
 ```bash
 cd your-repo-name
-
+```
 
 ## ⚙️ Prerequisites & Setup
 
