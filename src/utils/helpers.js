@@ -95,15 +95,6 @@ const calculateRank = (score, totalAttempts) => {
   };
 };
 
-const sanitizeHTML = (str) => {
-  return str
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#x27;');
-};
-
 const generateSessionId = () => {
   return `TEST_SESSION_${Date.now()}_${crypto.randomBytes(8).toString('hex')}`;
 };
@@ -145,7 +136,6 @@ module.exports = {
   parseFilters,
   parseSorting,
   calculateRank,
-  sanitizeHTML,
   generateSessionId,
   isValidEmail,
   isValidMobile,
